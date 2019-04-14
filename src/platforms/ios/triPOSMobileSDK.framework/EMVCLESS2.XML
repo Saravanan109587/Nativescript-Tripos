@@ -1,0 +1,1036 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Fichier de parametres base kenels contacless -->
+
+<tlvtree ver="1.0">
+
+<node tag="0x0">
+    <node tag="0x9F918801"> 44 65 66 61 75 6C 74 20 50 61 72 61 6d 65 74 65
+                              72 73 </node>             <!-- TAG_SAMPLE_PARAMETERS_LABEL : Parameters identifier label -->
+
+    <node tag="0xBF918800"> <!-- TAG_SAMPLE_AID_PARAMETERS -->
+
+        <node tag="0x1000">
+            <!-- AID : VISA: Visa Credit or Debit or Easy Entry -->
+            <node tag="0x9F06"> A0 00 00 00 03 10 10 </node>                <!-- TAG_AID_TERMINAL -->
+            <!-- Application Program Identifier not specified : default parameters set -->
+            <node tag="0x9F928101"> 00 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : VISA -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount -->
+            <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 10.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 15.00 -->
+            <node tag="0x9F66"> 86 00 40 00 </node>                         <!-- TAG_EP_TERMINAL_TRANSACTION_QUALIFIERS 1st byte: EMV A6, MSD 86 -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9FA15D"> 56 49 53 41 </node>                       <!-- TAG_EMV_SCHEME_LABEL -->
+            <node tag="0x9F91831E"> 01 </node>                              <!-- TAG_PAYWAVE_MSD_DISABLE_CVN17 : TRUE -->
+            <node tag="0x9F91841F"> 00 00 00 00 00 00 00 00 00 </node>      <!-- TAG_KERNEL_REVOKED_CERTIFICATE_LIST (do not alter) -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : VISA: US Common Debit AID -->
+            <node tag="0x9F06"> A0 00 00 00 98 08 40 </node>                <!-- TAG_AID_TERMINAL -->
+            <!-- Application Program Identifier not specified : default parameters set -->
+            <node tag="0x9F928101"> 00 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : VISA -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount -->
+            <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 10.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 15.00 -->
+            <node tag="0x9F66"> 86 00 40 00 </node>                         <!-- TAG_EP_TERMINAL_TRANSACTION_QUALIFIERS 1st byte: EMV A6, MSD 86 -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9FA15D"> 56 49 53 41 </node>                       <!-- TAG_EMV_SCHEME_LABEL -->
+            <node tag="0x9F91831E"> 01 </node>                              <!-- TAG_PAYWAVE_MSD_DISABLE_CVN17 : TRUE -->
+            <node tag="0x9F91841F"> 00 00 00 00 00 00 00 00 00 </node>      <!-- TAG_KERNEL_REVOKED_CERTIFICATE_LIST (do not alter) -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : VISA: Visa Electron -->
+            <node tag="0x9F06"> A0 00 00 00 03 20 10 </node>                <!-- TAG_AID_TERMINAL -->
+            <!-- Application Program Identifier not specified : default parameters set -->
+            <node tag="0x9F928101"> 00 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : VISA -->
+            <node tag="0x9F928100"> 05 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : TAG_EP_AID_OPTIONS : Partial AID & Zero amount + EP allowed -->
+            <node tag="0x9F66"> 86 00 40 00 </node>                         <!-- TAG_EP_TERMINAL_TRANSACTION_QUALIFIERS 1st byte: EMV A6, MSD 86 -->
+            <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 10.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT: 15.00 -->
+            <node tag="0x9F91831E"> 01 </node>                              <!-- TAG_PAYWAVE_MSD_DISABLE_CVN17 : TRUE -->
+            <node tag="0x9F91841F"> 00 00 00 00 00 00 00 00 00 </node>      <!-- TAG_KERNEL_REVOKED_CERTIFICATE_LIST (do not alter) -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : VISA: Visa Interlink -->
+            <node tag="0x9F06"> A0 00 00 00 03 30 10 </node>                <!-- TAG_AID_TERMINAL -->
+            <!-- Application Program Identifier not specified : default parameters set -->
+            <node tag="0x9F928101"> 00 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : VISA -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount -->
+            <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 10.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 15.00 -->
+            <node tag="0x9F66"> 86 00 40 00 </node>                         <!-- TAG_EP_TERMINAL_TRANSACTION_QUALIFIERS 1st byte: EMV A6, MSD 86 -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9FA15D"> 56 49 53 41 </node>                       <!-- TAG_EMV_SCHEME_LABEL -->
+            <node tag="0x9F91831E"> 01 </node>                              <!-- TAG_PAYWAVE_MSD_DISABLE_CVN17 : TRUE -->
+            <node tag="0x9F91841F"> 00 00 00 00 00 00 00 00 00 </node>      <!-- TAG_KERNEL_REVOKED_CERTIFICATE_LIST (do not alter) -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : MasterCard PayPass AID -->
+            <node tag="0x9F06"> A0 00 00 00 04 10 10 </node>                <!-- TAG_AID_TERMINAL : MasterCard PayPass AID -->
+            <node tag="0x9F928101"> 00 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : MasterCard -->
+            <node tag="0x9F928100"> 05 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F92810F"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 15.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 -->
+            <node tag="0x9F918502"> 9F 6A 04 </node>                        <!-- TAG_PAYPASS_DEFAULT_UDOL : Value defined in the Paypass 2.0 specification -->
+            <node tag="0x9F918709"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_DEFAULT -->
+            <node tag="0x9F91870A"> 00 00 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DENIAL : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F91870B"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_ONLINE -->
+            <node tag="0x9F53"> 52 </node>                                  <!-- TAG_PAYPASS_TRANSACTION_CATEGORY_CODE : 52 -->
+            <node tag="0x9F918706"> 9F 08 02 </node>                        <!-- TAG_EMV_INT_DEFAULT_TDOL : 9F 08 02 -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9FA15D"> 4D 43 </node>                             <!-- TAG_EMV_SCHEME_LABEL -->
+                  <!-- Tags for PayPass 3 only -->
+            <node tag="0x9F918523"> E0 </node>                              <!-- TAG_PAYPASS_CARD_DATA_INPUT_CAPABILITY : E0 (Manual, MStripe and Contact) -->
+            <node tag="0x9F918524"> C8 </node>                              <!-- TAG_PAYPASS_SECURITY_CAPABILITY : C8 (SDA, DDA, CDA) -->
+            <node tag="0x9F918525"> F8 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_REQUIRED : 68 (Plaintext Offline PIN, Online PIN, Signature, Enciphered offline PIN and No CVM)-->
+            <node tag="0x9F918526"> 08 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_NOT_REQUIRED : 08 (No CVM only) -->
+            <node tag="0x9F918527"> 10 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F918528"> 00 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_NOT_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F91851C"> 00 00 00 00 15 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_NO_DCV : 15.00 -->
+            <node tag="0x9F91851D"> 00 00 00 00 30 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_DCV : 30.00 -->
+            <node tag="0x9F918522"> 20 </node>                              <!-- TAG_PAYPASS_KERNEL_CONFIGURATION : 20 (both MChip and MStripe and 'On device cardholder verification' supported -->
+            <node tag="0x9F6D"> 00 01 </node>                               <!-- TAG_PAYPASS_MSTRIPE_APPLI_VERSION_NUMBER_TERM [Default is 00 01]-->
+            <node tag="0x9F09"> 00 02 </node>                               <!-- TAG_EMV_APPLI_VERSION_NUMBER_TERM [Default is 00 02]-->
+            <node tag="0x9F918565"> 01 2C </node>                           <!-- TAG_PAYPASS_MAX_LIFETIME_OF_TORN_TXN_LOG_RECORD : 01 2C (300 sec) [Default is 01 2C]-->
+            <node tag="0x9F918561"> 00 </node>                              <!-- TAG_PAYPASS_MAX_NUMBER_OF_TORN_TXN_LOG_RECORDS : Max Nbr of records that can be contained in the torn log [Default is 00]-->
+            <node tag="0x9F91852B"> 00 00 13 </node>                        <!-- TAG_PAYPASS_DEFAULT_HOLD_TIME : 00 00 13 (1.9sec) [Default is 00 00 13]-->
+            <node tag="0x9F918568"> 0D </node>                              <!-- TAG_PAYPASS_HOLD_TIME_VALUE : 0D (1.3sec) [Default is 0D]-->
+            <node tag="0x9F91854C"> 2E E0 </node>                           <!-- TAG_PAYPASS_TIME_OUT_VALUE : 2E E0 (12sec) [Default is 01 F4]-->
+            <node tag="0x9F1D"> 2C B8 00 00 00 00 00 00 </node>             <!-- TAG_TERMINAL_RISK_MANAGMENT_DATA -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : Maestro PayPass AID for debit -->
+            <node tag="0x9F06"> A0 00 00 00 04 30 60 </node>                <!-- TAG_AID_TERMINAL : Maestro PayPass AID -->
+            <node tag="0x9F928101"> 00 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : MasterCard -->
+            <node tag="0x9F928100"> 05 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F92810F"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 15.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 -->
+            <node tag="0x9F918502"> 9F 6A 04 </node>                        <!-- TAG_PAYPASS_DEFAULT_UDOL : Value defined in the Paypass 2.0 specification -->
+            <node tag="0x9F918709"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_DEFAULT -->
+            <node tag="0x9F91870A"> 00 00 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DENIAL : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F91870B"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_ONLINE -->
+            <node tag="0x9F53"> 52 </node>                                  <!-- TAG_PAYPASS_TRANSACTION_CATEGORY_CODE : 52 -->
+            <node tag="0x9F918706"> 9F 08 02 </node>                        <!-- TAG_EMV_INT_DEFAULT_TDOL : 9F 08 02 -->
+            <node tag="0x9F91841D"> 65 6E </node>                           <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en -->
+                  <!-- Tags for PayPass 3 only -->
+            <node tag="0x9F918523"> E0 </node>                              <!-- TAG_PAYPASS_CARD_DATA_INPUT_CAPABILITY : E0 (Manual,MStripe and Contact) -->
+            <node tag="0x9F918524"> C8 </node>                              <!-- TAG_PAYPASS_SECURITY_CAPABILITY : C8 (SDA, DDA, CDA) -->
+            <node tag="0x9F918525"> F8 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_REQUIRED : 68 (Plaintext Offline PIN, Online PIN, Signature, Enciphered offline PIN and No CVM)-->
+            <node tag="0x9F918526"> 08 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_NOT_REQUIRED : 08 (No CVM only) -->
+            <node tag="0x9F918527"> 10 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F918528"> 00 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_NOT_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F91851C"> 00 00 00 00 15 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_NO_DCV : 15.00 -->
+            <node tag="0x9F91851D"> 00 00 00 00 30 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_DCV : 30.00 -->
+            <node tag="0x9F918522"> 20 </node>                              <!-- TAG_PAYPASS_KERNEL_CONFIGURATION : 20 (both MChip and MStripe and 'On device cardholder verification' supported -->
+            <node tag="0x9F6D"> 00 01 </node>                               <!-- TAG_PAYPASS_MSTRIPE_APPLI_VERSION_NUMBER_TERM [Default is 00 01]-->
+            <node tag="0x9F09"> 00 02 </node>                               <!-- TAG_EMV_APPLI_VERSION_NUMBER_TERM [Default is 00 02]-->
+            <node tag="0x9F918565"> 01 2C </node>                           <!-- TAG_PAYPASS_MAX_LIFETIME_OF_TORN_TXN_LOG_RECORD : 01 2C (300 sec) [Default is 01 2C]-->
+            <node tag="0x9F918561"> 00 </node>                              <!-- TAG_PAYPASS_MAX_NUMBER_OF_TORN_TXN_LOG_RECORDS : Max Nbr of records that can be contained in the torn log [Default is 00]-->
+            <node tag="0x9F91852B"> 00 00 13 </node>                        <!-- TAG_PAYPASS_DEFAULT_HOLD_TIME : 00 00 13 (1.9sec) [Default is 00 00 13]-->
+            <node tag="0x9F918568"> 0D </node>                              <!-- TAG_PAYPASS_HOLD_TIME_VALUE : 0D (1.3sec) [Default is 0D]-->
+            <node tag="0x9F91854C"> 2E E0 </node>                           <!-- TAG_PAYPASS_TIME_OUT_VALUE : 2E E0 (12sec) [Default is 01 F4]-->
+            <node tag="0x9F1D"> 2C B8 00 00 00 00 00 00 </node>             <!-- TAG_TERMINAL_RISK_MANAGMENT_DATA -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : US Maestro PayPass AID for debit (Common Debit AID) -->
+            <node tag="0x9F06"> A0 00 00 00 04 22 03 </node>                <!-- TAG_AID_TERMINAL : US Maestro PayPass AID -->
+            <node tag="0x9F928101"> 00 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : MasterCard -->
+            <node tag="0x9F928100"> 05 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F92810F"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 15.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 -->
+            <node tag="0x9F918502"> 9F 6A 04 </node>                        <!-- TAG_PAYPASS_DEFAULT_UDOL : Value defined in the Paypass 2.0 specification -->
+            <node tag="0x9F918709"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_DEFAULT -->
+            <node tag="0x9F91870A"> 00 00 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DENIAL : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F91870B"> FC 50 0C 88 00 </node>                  <!-- TAG_EMV_INT_TAC_ONLINE -->
+            <node tag="0x9F53"> 52 </node>                                  <!-- TAG_PAYPASS_TRANSACTION_CATEGORY_CODE : 52 -->
+            <node tag="0x9F918706"> 9F 08 02 </node>                        <!-- TAG_EMV_INT_DEFAULT_TDOL : 9F 08 02 -->
+            <node tag="0x9F91841D"> 65 6E </node>                           <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en -->
+                  <!-- Tags for PayPass 3 only -->
+            <node tag="0x9F918523"> E0 </node>                              <!-- TAG_PAYPASS_CARD_DATA_INPUT_CAPABILITY : E0 (Manual,MStripe and Contact) -->
+            <node tag="0x9F918524"> C8 </node>                              <!-- TAG_PAYPASS_SECURITY_CAPABILITY : C8 (SDA, DDA, CDA) -->
+            <node tag="0x9F918525"> F8 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_REQUIRED : 68 (Plaintext Offline PIN, Online PIN, Signature, Enciphered offline PIN and No CVM)-->
+            <node tag="0x9F918526"> 08 </node>                              <!-- TAG_PAYPASS_MCHIP_CVM_CAPABILITY_CVM_NOT_REQUIRED : 08 (No CVM only) -->
+            <node tag="0x9F918527"> 10 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F918528"> 00 </node>                              <!-- TAG_PAYPASS_MSTRIPE_CVM_CAPABILITY_CVM_NOT_REQUIRED : 00(No CVM), 10(OBTAIN SIGNATURE), 20(ONLINE PIN) -->
+            <node tag="0x9F91851C"> 00 00 00 00 15 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_NO_DCV : 15.00 -->
+            <node tag="0x9F91851D"> 00 00 00 00 30 00 </node>               <!-- TAG_PAYPASS_CLESS_TRANSACTION_LIMIT_DCV : 30.00 -->
+            <node tag="0x9F918522"> 20 </node>                              <!-- TAG_PAYPASS_KERNEL_CONFIGURATION : 20 (both MChip and MStripe and 'On device cardholder verification' supported -->
+            <node tag="0x9F6D"> 00 01 </node>                               <!-- TAG_PAYPASS_MSTRIPE_APPLI_VERSION_NUMBER_TERM [Default is 00 01]-->
+            <node tag="0x9F09"> 00 02 </node>                               <!-- TAG_EMV_APPLI_VERSION_NUMBER_TERM [Default is 00 02]-->
+            <node tag="0x9F918565"> 01 2C </node>                           <!-- TAG_PAYPASS_MAX_LIFETIME_OF_TORN_TXN_LOG_RECORD : 01 2C (300 sec) [Default is 01 2C]-->
+            <node tag="0x9F918561"> 00 </node>                              <!-- TAG_PAYPASS_MAX_NUMBER_OF_TORN_TXN_LOG_RECORDS : Max Nbr of records that can be contained in the torn log [Default is 00]-->
+            <node tag="0x9F91852B"> 00 00 13 </node>                        <!-- TAG_PAYPASS_DEFAULT_HOLD_TIME : 00 00 13 (1.9sec) [Default is 00 00 13]-->
+            <node tag="0x9F918568"> 0D </node>                              <!-- TAG_PAYPASS_HOLD_TIME_VALUE : 0D (1.3sec) [Default is 0D]-->
+            <node tag="0x9F91854C"> 2E E0 </node>                           <!-- TAG_PAYPASS_TIME_OUT_VALUE : 2E E0 (12sec) [Default is 01 F4]-->
+            <node tag="0x9F1D"> 2C B8 00 00 00 00 00 00 </node>             <!-- TAG_TERMINAL_RISK_MANAGMENT_DATA -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : Interac AID -->
+            <node tag="0x9F06"> A0 00 00 02 77 10 10 </node>                <!-- TAG_AID_TERMINAL : Interac AID -->
+            <node tag="0x9F928101"> 01 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : Interac -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 20.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 15.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 -->
+            <node tag="0x9F1B"> 00 00 27 10 </node>                         <!-- TAG_EMV_TERMINAL_FLOOR_LIMIT : 100.00 -->
+            <node tag="0x9F918A11"> 00 02 </node>                           <!-- TAG_INTERAC_INT_TERMINAL_AVN_LIST : 0002 -->
+            <node tag="0x9F918A04"> E0 08 00 </node>                        <!-- TAG_INTERAC_TERMINAL_CAPABILITIES_CVM_REQ : E0 08 00 (No CVM only, no CDA) -->
+            <node tag="0x9F918A05"> E0 08 00 </node>                        <!-- TAG_INTERAC_TERMINAL_CAPABILITIES_NO_CVM_REQ : E0 08 00 (No CVM only, no CDA) -->
+            <node tag="0x9F918709"> FC 68 FC F8 00 </node>                  <!-- TAG_EMV_INT_TAC_DEFAULT : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F91870A"> 00 10 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DENIAL : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F91870B"> FC 68 FC F8 00 </node>                  <!-- TAG_EMV_INT_TAC_ONLINE : 00 00 00 00 00 (no matching bit) -->
+            <node tag="0x9F918706"> 9F 08 02 </node>                        <!-- TAG_EMV_INT_DEFAULT_TDOL : 9F 08 02 -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9F58"> 03 </node>                                  <!-- TAG_INTERAC_MERCHANT_TYPE_INDICATOR : 03 (in range 01 to 05) -->
+            <node tag="0x9F59"> C0 80 00 </node>                            <!-- TAG_INTERAC_TERMINAL_TRANSACTION_INFORMATION : C0 80 00 (Display, contactless, contact and mag: other bits set in kernel) -->
+            <node tag="0x9F5D"> 00 00 00 00 00 00 </node>                   <!-- TAG_INTERAC_RECEIPT_LIMIT : 00 00 00 00 00 00 -->
+            <node tag="0x9F5E"> 00 00 </node>                               <!-- TAG_INTERAC_TERMINAL_OPTION_STATUS : default E0 00 (Canada), 00 00 (US) -->
+            <node tag="0x9FA15D"> 44 45 42 49 54 </node>                    <!-- TAG_EMV_SCHEME_LABEL -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : Discover AID for debit -->
+            <node tag="0x9F06"> A0 00 00 03 24 10 10 </node>                <!-- TAG_AID_TERMINAL : Discover AID -->
+            <node tag="0x9F928101"> 01 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : Discover -->
+            <node tag="0x9F928100"> 25 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount -->
+	    <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100 euros -->
+	    <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT -->
+	    <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 --> <!--TRCA-74-->
+            <node tag="0x9FA15D"> 44 49 53 </node>                          <!-- TAG_EMV_SCHEME_LABEL -->
+            <node tag="0x9F1A"> 08 40 </node>                               <!-- TAG_EMV_TERMINAL_COUNTRY_CODE - 0124 for Canada, 0840 for US -->
+        </node>
+	<node tag="0x1000">
+	    <!-- AID : Discover DPAS -->
+	    <node tag="0x9F06"> A0 00 00 01 52 30 10 </node>                <!-- TAG_AID_TERMINAL : Discover DPAS AID -->
+	    <node tag="0x9F928101"> 00 06 </node>                           <!-- TAG_EP_KERNEL_TO_USE : Discover DPAS -->
+	    <node tag="0x9F928100"> 05 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount + EP allowed -->
+	    <node tag="0x9F92810D"> 00 00 00 01 00 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 100 euros -->
+	    <node tag="0x9F92810E"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT -->
+	    <node tag="0x9F92810F"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT -->
+	    <node tag="0x9F66"> 86 60 C0 00 </node>                         <!-- TAG_EP_TERMINAL_TRANSACTION_QUALIFIERS -->
+	    <node tag="0x9F09"> 00 01 </node>                               <!-- TAG_EMV_APPLI_VERSION_NUMBER_TERM -->
+	    <node tag="0x9F918617"> 5C </node>                              <!-- TAG_DISCOVER_DPAS_INT_SUPPORTED_CAPK_INDEX_LIST -->
+	    <node tag="0x9F918618"> 00 </node>                              <!-- TAG_DISCOVER_DPAS_INT_MERCHANT_FORCE_ONLINE -->
+	    <node tag="0x9F33"> E0 E8 08 </node>                            <!-- TAG_EMV_TERMINAL_CAPABILITIES -->
+		</node>
+        <node tag="0x1000">
+            <!-- AID : Discover AID for US Common Debit -->
+            <node tag="0x9F06"> A0 00 00 01 52 40 10 </node>                <!-- TAG_AID_TERMINAL : Discover US Common Debit AID -->
+            <node tag="0x9F928101"> 01 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : Discover -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 --> <!--TRCA-74-->
+            <node tag="0x9FA15D"> 44 49 53 </node>                          <!-- TAG_EMV_SCHEME_LABEL -->
+            <node tag="0x9F1A"> 08 40 </node>                               <!-- TAG_EMV_TERMINAL_COUNTRY_CODE - 0124 for Canada, 0840 for US -->
+        </node>
+        <node tag="0x1000">
+            <!-- AID : American Express ExpressPay AID -->
+            <node tag="0x9F06"> A0 00 00 00 25 01 </node>                   <!-- TAG_AID_TERMINAL : American Express ExpressPay -->
+            <node tag="0x9F928101"> 00 04 </node>                           <!-- TAG_EP_KERNEL_TO_USE : ExpressPay -->
+            <node tag="0x9F928100"> 05 03 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F92810D"> 00 00 00 00 15 00 </node>               <!-- TAG_EP_CLESS_TRANSACTION_LIMIT : 15.00 -->
+            <node tag="0x9F92810F"> 00 00 00 00 12 00 </node>               <!-- TAG_EP_CLESS_FLOOR_LIMIT : 12.00 -->
+            <node tag="0x9F92810E"> 00 00 00 00 10 00 </node>               <!-- TAG_EP_CLESS_CVM_REQUIRED_LIMIT : 10.00 -->
+            <node tag="0x9F1B"> 00 00 27 10 </node>                         <!-- TAG_EMV_TERMINAL_FLOOR_LIMIT : 100.00 -->
+            <node tag="0x9F918200"> 00 3C </node>                           <!-- TAG_EXPRESSPAY_UNPREDICTABLE_NUMBER_RANGE : 60 -->
+            <node tag="0x9F91820A"> 00 01 </node>                           <!-- TAG_EXPRESSPAY_INT_TERMINAL_AVN_LIST : 0001 -->
+            <node tag="0x9F918709"> DC 50 84 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DEFAULT -->
+            <node tag="0x9F91870A"> 00 00 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_DENIAL -->
+            <node tag="0x9F91870B"> C4 00 00 00 00 </node>                  <!-- TAG_EMV_INT_TAC_ONLINE -->
+            <node tag="0x9F918706"> 9F 08 02 </node>                        <!-- TAG_EMV_INT_DEFAULT_TDOL -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9F33"> E0 F8 C8 </node>                            <!-- TAG_EMV_TERMINAL_CAPABILITIES : E0 F8 E8 (Plaintext PIN, PIN Online, Signature, Offline PIN and No CVM, SDA, DDA, Card capture and CDA) -->
+            <node tag="0x9F6D"> C0 </node>                                  <!-- TAG_EXPRESSPAY_TERMINAL_CAPABILITIES : 00 (ExpressPay 1.0), 40 (ExpressPay 2.0 Magstripe Only), 80 (ExpressPay 2.0 EMV and Magstripe), C0 (ExpressPay Mobile) -->
+            <node tag="0x9F91820F"> 00 00 27 10 </node>                     <!-- TAG_EXPRESSPAY_FULL_ONLINE_EMV_REMOVAL_TIMEOUT : (4E20=20 sec) (2710=10 sec) (1388=5 sec) -->
+                      <!-- Tags for ExpressPay 3 only -->                       
+            <node tag="0x9F6E"> D8 B0 00 00 </node>                         <!-- TAG_EXPRESSPAY_TERMINAL_TRANSACTION_CAPABILITIES -->                                   
+        </node>
+        <node tag="0x1000">
+            <!-- AID : Google Wallet -->
+            <node tag="0x9F06"> A0 00 00 04 76 </node>                      <!-- TAG_AID_TERMINAL : Google Wallet AID -->
+            <node tag="0x9F928101"> 01 04 </node>                           <!-- TAG_EP_KERNEL_TO_USE : Google Wallet -->
+            <node tag="0x9F928100"> 0D 01 00 00 </node>                     <!-- TAG_EP_AID_OPTIONS : Partial AID & Zero amount & PPSE -->
+            <node tag="0x9F1B"> 00 00 00 00 </node>                         <!-- TAG_EMV_TERMINAL_FLOOR_LIMIT : 0.00 (not used) -->
+            <node tag="0x9F91841D"> 65 6E 66 72 </node>                     <!-- TAG_KERNEL_TERMINAL_SUPPORTED_LANGUAGES : en, fr -->
+            <node tag="0x9F918808"> 01 </node>                              <!-- TAG_SAMPLE_COUPONING_MODE 00 no couponing, 01 only couponing, 02 couponing before tr, 03 couponing after tr -->
+        </node>
+        
+    </node> <!-- End node 0xBF918800 : TAG_SAMPLE_AID_PARAMETERS -->
+
+
+    <node tag="0xBF918801"> <!-- TAG_SAMPLE_CAKEYS_PARAMETERS -->
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 07 </node>
+            <node tag="0x9F918704"> A8 9F 25 A5 6F A6 DA 25 8C 8C A8 B4 04 27 D9 27 B4 A1 EB 4D
+                                    7E A3 26 BB B1 2F 97 DE D7 0A E5 E4 48 0F C9 C5 E8 A9 72 17
+                                    71 10 A1 CC 31 8D 06 D2 F8 F5 C4 84 4A C5 FA 79 A4 DC 47 0B
+                                    B1 1E D6 35 69 9C 17 08 1B 90 F1 B9 84 F1 2E 92 C1 C5 29 27
+                                    6D 8A F8 EC 7F 28 49 20 97 D8 CD 5B EC EA 16 FE 40 88 F6 CF
+                                    AB 4A 1B 42 32 8A 1B 99 6F 92 78 B0 B7 E3 31 1C A5 EF 85 6C
+                                    2F 88 84 74 B8 36 12 A8 2E 4E 00 D0 CD 40 69 A6 78 31 40 43
+                                    3D 50 72 5F </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> B4 BC 56 CC 4E 88 32 49 32 CB C6 43 D6 89 8F 6F E5 93 B1 72 </node>
+        </node>
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 50 </node>
+            <node tag="0x9F918704"> D1 11 97 59 00 57 B8 41 96 C2 F4 D1 1A 8F 3C 05
+                                    40 8F 42 2A 35 D7 02 F9 01 06 EA 5B 01 9B B2 8A
+                                    E6 07 AA 9C DE BC D0 D8 1A 38 D4 8C 7E BB 00 62
+                                    D2 87 36 9E C0 C4 21 24 24 6A C3 0D 80 CD 60 2A
+                                    B7 23 8D 51 08 4D ED 46 98 16 2C 59 D2 5E AC 1E
+                                    66 25 5B 4D B2 35 25 26 EF 09 82 C3 B8 AD 3D 1C
+                                    CE 85 B0 1D B5 78 8E 75 E0 9F 44 BE 73 61 36 6D
+                                    EF 9D 1E 13 17 B0 5E 5D 0F F5 29 0F 88 A0 DB 47 </node>
+            <node tag="0x9F918703"> 01 00 01 </node>
+            <node tag="0x9F918702"> B7 69 77 56 68 CA CB 5D 22 A6 47 D1 D9 93 14 1E DA B7 23 7B </node>
+        </node>
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 51 </node>
+            <node tag="0x9F918704"> DB 5F A2 9D 1F DA 8C 16 34 B0 4D CC FF 14 8A BE
+                                    E6 3C 77 20 35 C7 98 51 D3 51 21 07 58 6E 02 A9
+                                    17 F7 C7 E8 85 E7 C4 A7 D5 29 71 0A 14 53 34 CE
+                                    67 DC 41 2C B1 59 7B 77 AA 25 43 B9 8D 19 CF 2C
+                                    B8 0C 52 2B DB EA 0F 1B 11 3F A2 C8 62 16 C8 C6
+                                    10 A2 D5 8F 29 CF 33 55 CE B1 BD 3E F4 10 D1 ED
+                                    D1 F7 AE 0F 16 89 79 79 DE 28 C6 EF 29 3E 0A 19
+                                    28 2B D1 D7 93 F1 33 15 23 FC 71 A2 28 80 04 68
+                                    C0 1A 36 53 D1 4C 6B 48 51 A5 C0 29 47 8E 75 7F </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> B9 D2 48 07 5A 3F 23 B5 22 FE 45 57 3E 04 37 4D C4 99 5D 71 </node>
+        </node>
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 53 </node>
+            <node tag="0x9F918704"> BC D8 37 21 BE 52 CC CC 4B 64 57 32 1F 22 A7 DC
+                                    76 9F 54 EB 80 25 91 3B E8 04 D9 EA BB FA 19 B3
+                                    D7 C5 D3 CA 65 8D 76 8C AF 57 06 7E EC 83 C7 E6
+                                    E9 F8 1D 05 86 70 3E D9 DD DA DD 20 67 5D 63 42
+                                    49 80 B1 0E B3 64 E8 1E B3 7D B4 0E D1 00 34 4C
+                                    92 88 86 FF 4C CC 37 20 3E E6 10 6D 5B 59 D1 AC
+                                    10 2E 2C D2 D7 AC 17 F4 D9 6C 39 8E 5F D9 93 EC
+                                    B4 FF DF 79 B1 75 47 FF 9F A2 AA 8E EF D6 CB DA
+                                    12 4C BB 17 A0 F8 52 81 46 38 71 35 E2 26 B0 05
+                                    A4 74 B9 06 2F F2 64 D2 FF 8E FA 36 81 4A A2 95
+                                    00 65 B1 B0 4C 0A 1A E9 B2 F6 9D 4A 4A A9 79 D6
+                                    CE 95 FE E9 48 5E D0 A0 3A EE 9B D9 53 E8 1C FD
+                                    1E F6 E8 14 DF D3 C2 CE 37 AE FA 38 C1 F9 87 73
+                                    71 E9 1D 6A 5E B5 9F DE DF 75 D3 32 5F A3 CA 66
+                                    CD FB A0 E5 71 46 CC 78 98 18 FF 06 BE 5F CC 50
+                                    AB D3 62 AE 4B 80 99 6D </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> AC 21 3A 2E 0D 2C 0C A3 5A D0 20 13 23 53 6D 58 09 7E 4E 57 </node>
+        </node>
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 92 </node>
+            <node tag="0x9F918704"> 99 6A F5 6F 56 91 87 D0 92 93 C1 48 10 45 0E D8
+                                    EE 33 57 39 7B 18 A2 45 8E FA A9 2D A3 B6 DF 65
+                                    14 EC 06 01 95 31 8F D4 3B E9 B8 F0 CC 66 9E 3F
+                                    84 40 57 CB DD F8 BD A1 91 BB 64 47 3B C8 DC 9A
+                                    73 0D B8 F6 B4 ED E3 92 41 86 FF D9 B8 C7 73 57
+                                    89 C2 3A 36 BA 0B 8A F6 53 72 EB 57 EA 5D 89 E7
+                                    D1 4E 9C 7B 6B 55 74 60 F1 08 85 DA 16 AC 92 3F
+                                    15 AF 37 58 F0 F0 3E BD 3C 5C 2C 94 9C BA 30 6D
+                                    B4 4E 6A 2C 07 6C 5F 67 E2 81 D7 EF 56 78 5D C4
+                                    D7 59 45 E4 91 F0 19 18 80 0A 9E 2D C6 6F 60 08
+                                    05 66 CE 0D AF 8D 17 EA D4 6A D8 E3 0A 24 7C 9F </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 42 9C 95 4A 38 59 CE F9 12 95 F6 63 C9 63 E5 82 ED 6E B2 53 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 94 </node>
+            <node tag="0x9F918704"> AC D2 B1 23 02 EE 64 4F 3F 83 5A BD 1F C7 A6 F6
+                                    2C CE 48 FF EC 62 2A A8 EF 06 2B EF 6F B8 BA 8B
+                                    C6 8B BF 6A B5 87 0E ED 57 9B C3 97 3E 12 13 03
+                                    D3 48 41 A7 96 D6 DC BC 41 DB F9 E5 2C 46 09 79
+                                    5C 0C CF 7E E8 6F A1 D5 CB 04 10 71 ED 2C 51 D2
+                                    20 2F 63 F1 15 6C 58 A9 2D 38 BC 60 BD F4 24 E1
+                                    77 6E 2B C9 64 80 78 A0 3B 36 FB 55 43 75 FC 53
+                                    D5 7C 73 F5 16 0E A5 9F 3A FC 53 98 EC 7B 67 75
+                                    8D 65 C9 BF F7 82 8B 6B 82 D4 BE 12 4A 41 6A B7
+                                    30 19 14 31 1E A4 62 C1 9F 77 1F 31 B3 B5 73 36
+                                    00 0D FF 73 2D 3B 83 DE 07 05 2D 73 03 54 D2 97
+                                    BE C7 28 71 DC CF 0E 19 3F 17 1A BA 27 EE 46 4C
+                                    6A 97 69 09 43 D5 9B DA BB 2A 27 EB 71 CE EB DA
+                                    FA 11 76 04 64 78 FD 62 FE C4 52 D5 CA 39 32 96
+                                    53 0A A3 F4 19 27 AD FE 43 4A 2D F2 AE 30 54 F8
+                                    84 06 57 A2 6E 0F C6 17 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> C4 A3 C4 3C CF 87 32 7D 13 6B 80 41 60 E4 7D 43 B6 0E 6E 0F </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 95 </node>
+            <node tag="0x9F918704"> BE 9E 1F A5 E9 A8 03 85 29 99 C4 AB 43 2D B2 86
+                                    00 DC D9 DA B7 6D FA AA 47 35 5A 0F E3 7B 15 08
+                                    AC 6B F3 88 60 D3 C6 C2 E5 B1 2A 3C AA F2 A7 00
+                                    5A 72 41 EB AA 77 71 11 2C 74 CF 9A 06 34 65 2F
+                                    BC A0 E5 98 0C 54 A6 47 61 EA 10 1A 11 4E 0F 0B
+                                    55 72 AD D5 7D 01 0B 7C 9C 88 7E 10 4C A4 EE 12
+                                    72 DA 66 D9 97 B9 A9 0B 5A 6D 62 4A B6 C5 7E 73
+                                    C8 F9 19 00 0E B5 F6 84 89 8E F8 C3 DB EF B3 30
+                                    C6 26 60 BE D8 8E A7 8E 90 9A FF 05 F6 DA 62 7B </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> EE 15 11 CE C7 10 20 A9 B9 04 43 B3 7B 1D 5F 6E 70 30 30 F6 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 96 </node>
+            <node tag="0x9F918704"> B7 45 86 D1 9A 20 7B E6 62 7C 5B 0A AF BC 44 A2
+                                    EC F5 A2 94 2D 3A 26 CE 19 C4 FF AE EE 92 05 21
+                                    86 89 22 E8 93 E7 83 82 25 A3 94 7A 26 14 79 6F
+                                    B2 C0 62 8C E8 C1 1E 38 25 A5 6D 3B 1B BA EF 78
+                                    3A 5C 6A 81 F3 6F 86 25 39 51 26 FA 98 3C 52 16
+                                    D3 16 6D 48 AC DE 8A 43 12 12 FF 76 3A 7F 79 D9
+                                    ED B7 FE D7 6B 48 5D E4 5B EB 82 9A 3D 47 30 84
+                                    8A 36 6D 33 24 C3 02 70 32 FF 8D 16 A1 E4 4D 8D </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 76 16 E9 AC 8B E0 14 AF 88 CA 11 A8 FB 17 96 7B 73 94 03 0E </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 97 </node>
+            <node tag="0x9F918704"> AF 07 54 EA ED 97 70 43 AB 6F 41 D6 31 2A B1 E2
+                                    2A 68 09 17 5B EB 28 E7 0D 5F 99 B2 DF 18 CA E7
+                                    35 19 34 1B BB D3 27 D0 B8 BE 9D 4D 0E 15 F0 7D
+                                    36 EA 3E 3A 05 C8 92 F5 B1 9A 3E 9D 34 13 B0 D9
+                                    7E 7A D1 0A 5F 5D E8 E3 88 60 C0 AD 00 4B 1E 06
+                                    F4 04 0C 29 5A CB 45 7A 78 85 51 B6 12 7C 0B 29 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 80 01 CA 76 C1 20 39 55 E2 C6 28 41 CD 6F 20 10 87 E5 64 BF </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 98 </node>
+            <node tag="0x9F918704"> CA 02 6E 52 A6 95 E7 2B D3 0A F9 28 19 6E ED C9
+                                    FA F4 A6 19 F2 49 2E 3F B3 11 69 78 9C 27 6F FB
+                                    B7 D4 31 16 64 7B A9 E0 D1 06 A3 54 2E 39 65 29
+                                    2C F7 78 23 DD 34 CA 8E EC 7D E3 67 E0 80 70 89
+                                    50 77 C7 EF AD 93 99 24 CB 18 70 67 DB F9 2C B1
+                                    E7 85 91 7B D3 8B AC E0 C1 94 CA 12 DF 0C E5 B7
+                                    A5 02 75 AC 61 BE 7C 3B 43 68 87 CA 98 C9 FD 39 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> E7 AC 9A A8 EE D1 B5 FF 1B D5 32 CF 14 89 A3 E5 55 75 72 C1 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 03 </node>
+            <node tag="0x9F22"> 99 </node>
+            <node tag="0x9F918704"> AB 79 FC C9 52 08 96 96 7E 77 6E 64 44 4E 5D CD
+                                    D6 E1 36 11 87 4F 39 85 72 25 20 42 52 95 EE A4
+                                    BD 0C 27 81 DE 7F 31 CD 3D 04 1F 56 5F 74 73 06
+                                    EE D6 29 54 B1 7E DA BA 3A 6C 5B 85 A1 DE 1B EB
+                                    9A 34 14 1A F3 8F CF 82 79 C9 DE A0 D5 A6 71 0D
+                                    08 DB 41 24 F0 41 94 55 87 E2 03 59 BA B4 7B 75
+                                    75 AD 94 26 2D 4B 25 F2 64 AF 33 DE DC F2 8E 09
+                                    61 5E 93 7D E3 2E DC 03 C5 44 45 FE 7E 38 27 77 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 4A BF FD 6B 1C 51 21 2D 05 55 2E 43 1C 5B 17 00 7D 2F 5E 6D </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+			<node tag="0x9F22"> 05 </node>
+			<node tag="0x9F918704"> B8 04 8A BC 30 C9 0D 97 63 36 54 3E 3F D7 09 1C 
+                  8F E4 80 0D F8 20 ED 55 E7 E9 48 13 ED 00 55 5B 57 3F EC A3
+                  D8 4A F6 13 1A 65 1D 66 CF F4 28 4F B1 3B 63 5E DD 0E E4 01 
+                  76 D8 BF 04 B7 FD 1C 7B AC F9 AC 73 27 DF AA 8A A7 2D 10 DB 
+                  3B 8E 70 B2 DD D8 11 CB 41 96 52 5E A3 86 AC C3 3C 0D 9D 45 
+                  75 91 64 69 C4 E4 F5 3E 8E 1C 91 2C C6 18 CB 22 DD E7 C3 56 
+                  8E 90 02 2E 6B BA 77 02 02 E4 52 2A 2D D6 23 D1 80 E2 15 BD 
+                  1D 15 07 FE 3D C9 0C A3 10 D2 7B 3E FC CD 8F 83 DE 30 52 CA 
+                  D1 E4 89 38 C6 8D 09 5A AC 91 B5 F3 7E 28 BB 49 EC 7E D5 97 </node>
+			<node tag="0x9F918703"> 03 </node>
+			<node tag="0x9F918702"> EB FA 0D 5D 06 D8 CE 70 2D A3 EA E8 90 70 1D 45 E2 74 C8 45 </node>
+		</node>
+
+		<node tag="0x1000">
+			<node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F0 </node>
+            <node tag="0x9F918704"> 75 63 C5 1B 52 76 AA 63 70 AB 84 05 52 24 14 64
+                                    58 32 B6 BE F2 A9 89 C7 71 47 5B 2E 8D C6 54 DC
+                                    8A 5B FF 9E 28 E3 1F F1 A3 70 A4 0D C3 FF EB 06
+                                    BC 85 48 7D 5F 1C B6 1C 24 41 FD 71 CB CD 05 D8
+                                    83 F8 DE 41 3B 24 3A FC 9D CA 76 8B 06 1E 35 B8
+                                    84 B5 D2 1B 6B 01 6A A3 6B A1 2D AB CF E4 9F 8E
+                                    52 8C 89 3C 34 C7 D4 79 39 77 E4 CC 99 AB 09 64
+                                    0D 9C 7A AB 7E C5 FF 3F 40 E3 D4 D1 8D F7 E3 A7 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> AE 66 74 45 F8 DE 6F 82 C3 88 00 E5 EB AB A3 22 F0 3F 58 F2 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F3 </node>
+            <node tag="0x9F918704"> 98 F0 C7 70 F2 38 64 C2 E7 66 DF 02 D1 E8 33 DF
+                                    F4 FF E9 2D 69 6E 16 42 F0 A8 8C 56 94 C6 47 9D
+                                    16 DB 15 37 BF E2 9E 4F DC 6E 6E 8A FD 1B 0E B7
+                                    EA 01 24 72 3C 33 31 79 BF 19 E9 3F 10 65 8B 2F
+                                    77 6E 82 9E 87 DA ED A9 C9 4A 8B 33 82 19 9A 35
+                                    0C 07 79 77 C9 7A FF 08 FD 11 31 0A C9 50 A7 2C
+                                    3C A5 00 2E F5 13 FC CC 28 6E 64 6E 3C 53 87 53
+                                    5D 50 95 14 B3 B3 26 E1 23 4F 9C B4 8C 36 DD D4
+                                    4B 41 6D 23 65 40 34 A6 6F 40 3B A5 11 C5 EF A3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> A6 9A C7 60 3D AF 56 6E 97 2D ED C2 CB 43 3E 07 E8 B0 1A 9A </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F5 </node>
+            <node tag="0x9F918704"> A6 E6 FB 72 17 95 06 F8 60 CC CA 8C 27 F9 9C EC
+                                    D9 4C 7D 4F 31 91 D3 03 BB EE 37 48 1C 7A A1 5F
+                                    23 3B A7 55 E9 E4 37 63 45 A9 A6 7E 79 94 BD C1
+                                    C6 80 BB 35 22 D8 C9 3E B0 CC C9 1A D3 1A D4 50
+                                    DA 30 D3 37 66 2D 19 AC 03 E2 B4 EF 5F 6E C1 82
+                                    82 D4 91 E1 97 67 D7 B2 45 42 DF DE FF 6F 62 18
+                                    55 03 53 20 69 BB B3 69 E3 BB 9F B1 9A C6 F1 C3
+                                    0B 97 D2 49 EE E7 64 E0 BA C9 7F 25 C8 73 D9 73
+                                    95 3E 51 53 A4 20 64 BB FA BF D0 6A 4B B4 86 86
+                                    0B F6 63 74 06 C9 FC 36 81 3A 4A 75 F7 5C 31 CC
+                                    A9 F6 9F 8D E5 9A DE CE F6 BD E7 E0 78 00 FC BE
+                                    03 5D 31 76 AF 84 73 E2 3E 9A A3 DF EE 22 11 96
+                                    D1 14 83 02 67 7C 72 0C FE 25 44 A0 3D B5 53 E7
+                                    F1 B8 42 7B A1 CC 72 B0 F2 9B 12 DF EF 4C 08 1D
+                                    07 6D 35 3E 71 88 0A AD FF 38 63 52 AF 0A B7 B2
+                                    8E D4 9E 1E 67 2D 11 F9 </node>
+            <node tag="0x9F918703"> 01 00 01 </node>
+            <node tag="0x9F918702"> C2 23 98 04 C8 09 81 70 BE 52 D6 D5 D4 15 9E 81 CE 84 66 BF </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F6 </node>
+            <node tag="0x9F918704"> A2 5A 6B D7 83 A5 EF 6B 8F B6 F8 30 55 C2 60 F5
+                                    F9 9E A1 66 78 F3 B9 05 3E 0F 64 98 E8 2C 3F 5D
+                                    1E 8C 38 F1 35 88 01 7E 2B 12 B3 D8 FF 6F 50 16
+                                    7F 46 44 29 10 72 9E 9E 4D 1B 37 39 E5 06 7C 0A
+                                    C7 A1 F4 48 7E 35 F6 75 BC 16 E2 33 31 51 65 CB
+                                    14 2B FD B2 5E 30 1A 63 2A 54 A3 37 1E BA B6 57
+                                    2D EE BA F3 70 F3 37 F0 57 EE 73 B4 AE 46 D1 A8
+                                    BC 4D A8 53 EC 3C C1 2C 8C BC 2D A1 83 22 D6 85
+                                    30 C7 0B 22 BD AC 35 1D D3 60 68 AE 32 1E 11 AB
+                                    F2 64 F4 D3 56 9B B7 12 14 54 50 05 55 8D E2 60
+                                    83 C7 35 DB 77 63 68 17 2F E8 C2 F5 C8 5E 8B 5B
+                                    89 0C C6 82 91 1D 2D E7 1F A6 26 B8 81 7F CC C0
+                                    89 22 B7 03 86 9F 3B AE AC 14 59 D7 7C D8 53 76
+                                    BC 36 18 2F 42 38 31 4D 6C 42 12 FB DD 7F 23 D3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 50 29 09 ED 54 5E 3C 8D BD 00 EA 58 2D 06 17 FE E9 F6 F6 84 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F7 </node>
+            <node tag="0x9F918704"> 94 EA 62 F6 D5 83 20 E3 54 C0 22 AD DC F0 55 9D
+                                    8C F2 06 CD 92 E8 69 56 49 05 CE 21 D7 20 F9 71
+                                    B7 AE A3 74 83 0E BE 17 57 11 5A 85 E0 88 D4 1C
+                                    6B 77 CF 5E C8 21 F3 0B 1D 89 04 17 BF 2F A3 1E
+                                    59 08 DE D5 FA 67 7F 8C 7B 18 4A D0 90 28 FD DE
+                                    96 B6 A6 10 98 50 AA 80 01 75 EA BC DB BB 68 4A
+                                    96 C2 EB 63 79 DF EA 08 D3 2F E2 33 1F E1 03 23
+                                    3A D5 8D CD B1 E6 E0 77 CB 9F 24 EA EC 5C 25 AF </node>
+            <node tag="0x9F918703"> 01 00 01 </node>
+            <node tag="0x9F918702"> EE B0 DD 9B 24 77 BE E3 20 9A 91 4C DB A9 4C 1C 4A 9B DE D9 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F8 </node>
+            <node tag="0x9F918704"> A1 F5 E1 C9 BD 86 50 BD 43 AB 6E E5 6B 89 1E F7
+                                    45 9C 0A 24 FA 84 F9 12 7D 1A 6C 79 D4 93 0F 6D
+                                    B1 85 2E 25 10 F1 8B 61 CD 35 4D B8 3A 35 6B D1
+                                    90 B8 8A B8 DF 04 28 4D 02 A4 20 4A 7B 6C B7 C5
+                                    55 19 77 A9 B3 63 79 CA 3D E1 A0 8E 69 F3 01 C9
+                                    5C C1 C2 05 06 95 92 75 F4 17 23 DD 5D 29 25 29
+                                    05 79 E5 A9 5B 0D F6 32 3F C8 E9 27 3D 6F 84 91
+                                    98 C4 99 62 09 16 6D 9B FC 97 3C 36 1C C8 26 E1 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> F0 6E CC 6D 2A AE BF 25 9B 7E 75 5A 38 D9 A9 B2 4E 2F F3 DD </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F9 </node>
+            <node tag="0x9F918704"> A9 9A 6D 3E 07 18 89 ED 9E 3A 0C 39 1C 69 B0 B8
+                                    04 FC 16 0B 2B 4B DD 57 0C 92 DD 5A 0F 45 F5 3E
+                                    86 21 F7 C9 6C 40 22 42 66 73 5E 1E E1 B3 C0 62
+                                    38 AE 35 04 63 20 FD 8E 81 F8 CE B3 F8 B4 C9 7B
+                                    94 09 30 A3 AC 5E 79 00 86 DA D4 1A 6A 4F 51 17
+                                    BA 1C E2 43 8A 51 AC 05 3E B0 02 AE D8 66 D2 C4
+                                    58 FD 73 35 90 21 A1 20 29 A0 C0 43 04 5C 11 66
+                                    4F E0 21 9E C6 3C 10 BF 21 55 BB 27 84 60 9A 10
+                                    64 21 D4 51 63 79 97 38 C1 C3 09 09 BB 6C 6F E5
+                                    2B BB 76 39 7B 97 40 CE 06 4A 61 3F F8 41 11 85
+                                    F0 88 42 A4 23 EA D2 0E DF FB FF 1C D6 C3 FE 0C
+                                    98 21 47 91 99 C2 6D 85 72 CC 8A FF F0 87 A9 C3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 33 67 12 DC C2 85 54 80 9C 6A A9 B0 23 58 DE 6F 75 51 64 DB </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> FA </node>
+            <node tag="0x9F918704"> A9 0F CD 55 AA 2D 5D 99 63 E3 5E D0 F4 40 17 76 99 83 2F 49 C6 
+                                    BA B1 5C DA E5 79 4B E9 3F 93 4D 44 62 D5 D1 27 62 E4 8C 38 BA 
+                                    83 D8 44 5D EA A7 41 95 A3 01 A1 02 B2 F1 14 EA DA 0D 18 0E E5 
+                                    E7 A5 C7 3E 0C 4E 11 F6 7A 43 DD AB 5D 55 68 3B 14 74 CC 06 27 
+                                    F4 4B 8D 30 88 A4 92 FF AA DA D4 F4 24 22 D0 E7 01 35 36 C3 C4 
+                                    9A D3 D0 FA E9 64 59 B0 F6 B1 B6 05 65 38 A3 D6 D4 46 40 F9 44 
+                                    67 B1 08 86 7D EC 40 FA AE CD 74 0C 00 E2 B7 A8 85 2D </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 5B ED 40 68 D9 6E A1 6D 2D 77 E0 3D 60 36 FC 7A 16 0E A9 9C </node>
+        </node>
+        
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> F1 </node>
+            <node tag="0x9F918704"> A0 DC F4 BD E1 9C 35 46 B4 B6 F0 41 4D 17 4D DE 29 4A AB BB 
+                                    82 8C 5A 83 4D 73 AA E2 7C 99 B0 B0 53 A9 02 78 00 72 39 B6 
+                                    45 9F F0 BB CD 7B 4B 9C 6C 50 AC 02 CE 91 36 8D A1 BD 21 AA 
+                                    EA DB C6 53 47 33 7D 89 B6 8F 5C 99 A0 9D 05 BE 02 DD 1F 8C 
+                                    5B A2 0E 2F 13 FB 2A 27 C4 1D 3F 85 CA D5 CF 66 68 E7 58 51 
+                                    EC 66 ED BF 98 85 1F D4 E4 2C 44 C1 D5 9F 59 84 70 3B 27 D5 
+                                    B9 F2 1B 8F A0 D9 32 79 FB BF 69 E0 90 64 29 09 C9 EA 27 F8 
+                                    98 95 95 41 AA 67 57 F5 F6 24 10 4F 6E 1D 3A 95 32 F2 A6 E5 
+                                    15 15 AE AD 1B 43 B3 D7 83 50 88 A2 FA FA 7B E7 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> D8 E6 8D A1 67 AB 5A 85 D8 C3 D5 5E CB 9B 05 17 A1 A5 B4 BB </node>
+        </node>
+        
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> EF </node>
+            <node tag="0x9F918704"> A1 91 CB 87 47 3F 29 34 9B 5D 60 A8 8B 3E AE E0 97 3A A6 F1 
+                                    A0 82 F3 58 D8 49 FD DF F9 C0 91 F8 99 ED A9 79 2C AF 09 EF 
+                                    28 F5 D2 24 04 B8 8A 22 93 EE BB C1 94 9C 43 BE A4 D6 0C FD 
+                                    87 9A 15 39 54 4E 09 E0 F0 9F 60 F0 65 B2 BF 2A 13 EC C7 05 
+                                    F3 D4 68 B9 D3 3A E7 7A D9 D3 F1 9C A4 0F 23 DC F5 EB 7C 04 
+                                    DC 8F 69 EB A5 65 B1 EB CB 46 86 CD 27 47 85 53 0F F6 F6 E9 
+                                    EE 43 AA 43 FD B0 2C E0 0D AE C1 5C 7B 8F D6 A9 B3 94 BA BA 
+                                    41 9D 3F 6D C8 5E 16 56 9B E8 E7 69 89 68 8E FE A2 DF 22 FF 
+                                    7D 35 C0 43 33 8D EA A9 82 A0 2B 86 6D E5 32 85 19 EB BC D6 
+                                    F0 3C DD 68 66 73 84 7F 84 DB 65 1A B8 6C 28 CF 14 62 56 2C 
+                                    57 7B 85 35 64 A2 90 C8 55 6D 81 85 31 26 8D 25 CC 98 A4 CC 
+                                    6A 0B DF FF DA 2D CC A3 A9 4C 99 85 59 E3 07 FD DF 91 50 06 
+                                    D9 A9 87 B0 7D DA EB 3B </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 21 76 6E BB 0E E1 22 AF B6 5D 78 45 B7 3D B4 6B AB 65 42 7A </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 04 </node>
+            <node tag="0x9F22"> FE </node>
+            <node tag="0x9F918704"> A6 53 EA C1 C0 F7 86 C8 72 4F 73 7F 17 29 97 D6
+                                    3D 1C 32 51 C4 44 02 04 9B 86 5B AE 87 7D 0F 39
+                                    8C BF BE 8A 60 35 E2 4A FA 08 6B EF DE 93 51 E5
+                                    4B 95 70 8E E6 72 F0 96 8B CD 50 DC E4 0F 78 33
+                                    22 B2 AB A0 4E F1 37 EF 18 AB F0 3C 7D BC 58 13
+                                    AE AE F3 AA 77 97 BA 15 DF 7D 5B A1 CB AF 7F D5
+                                    20 B5 A4 82 D8 D3 FE E1 05 07 78 71 11 3E 23 A4
+                                    9A F3 92 65 54 A7 0F E1 0E D7 28 CF 79 3B 62 A1 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 9A 29 5B 05 FB 39 0E F7 92 3F 57 61 8A 9F DA 29 41 FC 34 E0 </node>
+        </node>
+        <!-- INTERAC -->
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 02 77 </node>
+            <node tag="0x9F22"> 40 </node>
+            <node tag="0x9F918704"> F8 02 C3 08 54 48 73 AD 22 25 A8 19 43 73 2A 4B
+                                7C FF A4 E3 15 7D 17 CD 5A 77 23 F8 58 F0 B1 1E
+                                63 6D 29 30 FA 93 37 78 F2 7C 7C 49 12 7E 0C CA
+                                31 70 21 CF E8 E0 F7 73 78 5E B3 FF 07 58 7E 98
+                                CE 8E D4 FE 9E 1C A1 85 9F 41 A9 CF 25 72 D8 A0
+                                93 C5 46 5F 5A 29 61 2A 45 B1 70 0F 4D A1 38 14
+                                C3 D4 DF 07 5E AA DE 8D B4 BE 4D 7B 3A E0 25 6F
+                                7A 0C 12 E3 4B D4 16 CA C4 F9 25 0C 38 B7 E1 3B </node>
+            <node tag="0x9F918703"> 01 00 01 </node>
+            <node tag="0x9F918702"> 20 15 49 7B E4 B8 6F 10 4B BF 33 76 91 82 5E ED 64 E1 01 CA </node>
+        </node>
+		<node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 02 77 </node>
+            <node tag="0x9F22"> 09 </node>
+            <node tag="0x9F918704"> F8 02 C3 08 54 48 73 AD 22 25 A8 19 43 73 2A 4B 
+			                        7C FF A4 E3 15 7D 17 CD 5A 77 23 F8 58 F0 B1 1E 
+									63 6D 29 30 FA 93 37 78 F2 7C 7C 49 12 7E 0C CA 
+									31 70 21 CF E8 E0 F7 73 78 5E B3 FF 07 58 7E 98 
+									CE 8E D4 FE 9E 1C A1 85 9F 41 A9 CF 25 72 D8 A0 
+									93 C5 46 5F 5A 29 61 2A 45 B1 70 0F 4D A1 38 14 
+									C3 D4 DF 07 5E AA DE 8D B4 BE 4D 7B 3A E0 25 6F 
+									7A 0C 12 E3 4B D4 16 CA C4 F9 25 0C 38 B7 E1 3B  </node>
+            <node tag="0x9F918703"> 01 00 01 </node>
+            <node tag="0x9F918702"> A2 97 4D 6B 8F 30 2A 92 37 40 E2 BC 62 17 07 52 02 03 7B 8B </node>
+        </node>
+
+        <!-- EXPRESS PAY -->
+        <node tag="0x1000">
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 03 </node>
+            <node tag="0x9F918704"> B0 C2 C6 E2 A6 38 69 33 CD 17 C2 39 49 6B F4 
+                                    8C 57 E3 89 16 4F 2A 96 BF F1 33 43 9A E8 A7 
+                                    7B 20 49 8B D4 DC 69 59 AB 0C 2D 05 D0 72 3A 
+                                    F3 66 89 01 93 7B 67 4E 5A 2F A9 2D DD 5E 78 
+                                    EA 9D 75 D7 96 20 17 3C C2 69 B3 5F 46 3B 3D 
+                                    4A AF F2 79 4F 92 E6 C7 A3 FB 95 32 5D 8A B9 
+                                    59 60 C3 06 6B E5 48 08 7B CB 6C E1 26 88 14 
+                                    4A 8B 4A 66 22 8A E4 65 9C 63 4C 99 E3 60 11 
+                                    58 4C 09 50 82 A3 A3 E3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 87 08 A3 E3 BB C1 BB 0B E7 3E BD 8D 19 D4 E5 D2 01 66 BF 6C </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 0E </node>
+            <node tag="0x9F918704"> AA 94 A8 C6 DA D2 4F 9B A5 6A 27 C0 9B 01 02 
+                                    08 19 56 8B 81 A0 26 BE 9F D0 A3 41 6C A9 A7 
+                                    11 66 ED 50 84 ED 91 CE D4 7D D4 57 DB 7E 6C 
+                                    BC D5 3E 56 0B C5 DF 48 AB C3 80 99 3B 6D 54 
+                                    9F 51 96 CF A7 7D FB 20 A0 29 61 88 E9 69 A2 
+                                    77 2E 8C 41 41 66 5F 8B B2 51 6B A2 C7 B5 FC 
+                                    91 F8 DA 04 E8 D5 12 EB 0F 64 11 51 6F B8 6F 
+                                    C0 21 CE 7E 96 9D A9 4D 33 93 79 09 A5 3A 57 
+                                    F9 07 C4 0C 22 00 9D A7 53 2C B3 BE 50 9A E1 
+                                    73 B3 9A D6 A0 1B A5 BB 85 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> A7 26 6A BA E6 4B 42 A3 66 88 51 19 1D 49 85 6E 17 F8 FB CD </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 0F </node>
+            <node tag="0x9F918704"> C8 D5 AC 27 A5 E1 FB 89 97 8C 7C 64 79 AF 99 
+                                    3A B3 80 0E B2 43 99 6F BB 2A E2 6B 67 B2 3A 
+                                    C4 82 C4 B7 46 00 5A 51 AF A7 D2 D8 3E 89 4F 
+                                    59 1A 23 57 B3 0F 85 B8 56 27 FF 15 DA 12 29 
+                                    0F 70 F0 57 66 55 2B A1 1A D3 4B 71 09 FA 49 
+                                    DE 29 DC B0 10 96 70 87 5A 17 EA 95 54 9E 92 
+                                    34 7B 94 8A A1 F0 45 75 6D E5 6B 70 7E 38 63 
+                                    E5 9A 6C BE 99 C1 27 2E F6 5F B6 6C BB 4C FF 
+                                    07 0F 36 02 9D D7 62 18 B2 12 42 64 5B 51 CA 
+                                    75 2A F3 7E 70 BE 1A 84 FF 31 07 9D C0 04 8E 
+                                    92 88 83 EC 4F AD D4 97 A7 19 38 5C 2B BB EB 
+                                    C5 A6 6A A5 E5 65 5D 18 03 4E C5 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> A7 34 72 B3 AB 55 74 93 A9 BC 21 79 CC 80 14 05 3B 12 BA B4  </node>
+        </node>
+                
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 10 </node>
+            <node tag="0x9F918704"> CF 98 DF ED B3 D3 72 79 65 EE 77 97 72 33 55 
+                                    E0 75 1C 81 D2 D3 DF 4D 18 EB AB 9F B9 D4 9F 
+                                    38 C8 C4 A8 26 B9 9D C9 DE A3 F0 10 43 D4 BF 
+                                    22 AC 35 50 E2 96 2A 59 63 9B 13 32 15 64 22 
+                                    F7 88 B9 C1 6D 40 13 5E FD 1B A9 41 47 75 05 
+                                    75 E6 36 B6 EB C6 18 73 4C 91 C1 D1 BF 3E DC 
+                                    2A 46 A4 39 01 66 8E 0F FC 13 67 74 08 0E 88 
+                                    80 44 F6 A1 E6 5D C9 AA A8 92 8D AC BE B0 DB 
+                                    55 EA 35 14 68 6C 6A 73 2C EF 55 EE 27 CF 87 
+                                    7F 11 06 52 69 4A 0E 34 84 C8 55 D8 82 AE 19 
+                                    16 74 E2 5C 29 62 05 BB B5 99 45 51 76 FD D7 
+                                    BB C5 49 F2 7B A5 FE 35 33 6F 7E 29 E6 8D 78 
+                                    39 73 19 94 36 63 3C 67 EE 5A 68 0F 05 16 0E 
+                                    D1 2D 16 65 EC 83 D1 99 7F 10 FD 05 BB DB F9 
+                                    43 3E 8F 79 7A EE 3E 9F 02 A3 42 28 AC E9 27 
+                                    AB E6 2B 8B 92 81 AD 08 D3 DF 5C 73 79 68 50 
+                                    45 D7 BA 5F CD E5 86 37 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> C7 29 CF 2F D2 62 39 4A BC 4C C1 73 50 65 02 44 6A A9 B9 FD </node>
+        </node>
+
+        <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 97 </node>
+            <node tag="0x9F918704"> E1 78 FF E8 34 B4 B7 67 AF 3C 9A 51 1F 97 3D 8E
+                                    85 05 C5 FC B2 D3 76 80 75 AB 7C C9 46 A9 55 78
+                                    99 55 87 9A AF 73 74 07 15 15 21 99 6D FA 43 C5
+                                    8E 6B 13 0E B1 D8 63 B8 5D C9 FF B4 05 09 47 A2
+                                    67 6A A6 A0 61 A4 A7 AE 1E DB 0E 36 A6 97 E8 7E
+                                    03 75 17 EB 89 23 13 68 75 BA 2C A1 08 7C BA 7E
+                                    C7 65 3E 5E 28 A0 C2 61 A0 33 AF 27 E3 A6 7B 64
+                                    BB A2 69 56 30 7E C4 7E 67 4E 3F 8B 72 2B 3A E0
+                                    49 8D B1 6C 79 85 31 0D 9F 3D 11 73 00 D3 2B 09 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> EB DA 52 2B 63 1B 3E B4 F4 CB FC 06 79 C4 50 13 9D 2B 69 CD </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 98 </node>
+            <node tag="0x9F918704"> D3 1A 70 94 FB 22 1C BA 66 60 FB 97 5A AF EA 
+                                    80 DB 7B B7 EA FD 73 51 E7 48 82 7A B6 2D 4A 
+                                    EE CC FC 17 87 FD 47 A0 46 99 A0 2D B0 0D 7C 
+                                    38 2E 80 E8 04 B3 5C 59 43 4C 60 23 89 D6 91 
+                                    B9 CC D5 1E D0 6B E6 7A 27 61 19 C4 C1 0E 2E 
+                                    40 FC 4E DD F9 DF 39 B9 B0 BD EE 8D 07 6E 2A 
+                                    01 2E 8A 29 2A F8 EF E1 85 53 47 06 39 C1 A0 
+                                    32 25 2E 0E 57 48 B2 5A 3F 9B A4 CF CE E0 73 
+                                    03 8B 06 18 37 F2 AC 1B 04 C2 79 64 0F 5B D1 
+                                    10 A9 DC 66 5E D2 FA 68 28 BD 5D 0F E8 10 A8 
+                                    92 DE E6 B0 E7 4C E8 86 3B DE 08 FD 5F D6 1A 
+                                    0F 11 FA 0D 14 97 8D 8C ED 7D D3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> D4 DB A4 28 CF 11 D4 5B AE B0 A3 5C AE A8 00 7A D8 BA 8D 71 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> 99 </node>
+            <node tag="0x9F918704"> E1 74 00 74 22 9F A0 D2 28 A9 62 35 81 D7 A3 
+                                    22 90 3F B8 9B A7 68 67 12 E6 01 FA 8A B2 4A 
+                                    97 89 18 6F 15 B7 0C CB BE 74 21 B1 CB 11 0D 
+                                    45 36 16 88 13 5F FD 0D B1 5A 3F 51 6B B2 91 
+                                    D4 A1 23 EB F5 A0 6F BF 7E 1E E6 31 1B 73 7D 
+                                    AB B2 89 57 0A 79 59 D5 32 B2 5F 1D A6 75 8C 
+                                    84 DD CC AD C0 49 BC 76 4C 05 39 1A BD 2C AD 
+                                    EF FA 7E 24 2D 5D D0 6E 56 00 1F 0E 68 15 1E 
+                                    33 88 07 4B D9 33 0D 6A FA 57 CB F3 39 46 F5 
+                                    31 E5 1E 0D 49 02 EE 23 5C 75 6A 90 5F B7 33 
+                                    94 0E 6E C8 97 B4 94 4A 5E DC 76 57 05 E2 AC 
+                                    F7 6C 78 EA D7 8D D9 B0 66 DF 0B 2C 88 75 0B 
+                                    8A EE 00 C9 B4 D4 09 1F A7 33 84 49 DA 92 DB 
+                                    FC 90 8F A0 78 1C 01 28 C4 92 DB 99 3C 88 BA 
+                                    8B B7 CA DF E2 38 D4 77 F2 51 7E 0E 7E 3D 2B 
+                                    11 79 6A 03 18 CE 2A D4 DA 1D B8 E5 4A B0 D9 
+                                    4F 10 9D B9 CA EE FB EF </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 94 79 0D 02 0F 4F 69 2D 59 28 9F 36 45 18 72 07 80 05 B6 3B </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C1 </node>
+            <node tag="0x9F918704"> E6 9E 31 9C 34 D1 B4 FB 43 AE D4 BD 8B BA 6F 7A
+                                    8B 76 3F 2F 6E E5 DD F7 C9 25 79 A9 84 F8 9C 4A
+                                    9C 15 B2 70 37 76 4C 58 AC 7E 45 EF BC 34 E1 38
+                                    E5 6B A3 8F 76 E8 03 12 9A 8D DE B5 E1 CC 8C 6B
+                                    30 CF 63 4A 9C 9C 12 24 BF 1F 0A 9A 18 D7 9E D4
+                                    1E BC F1 BE 78 08 7A E8 B7 D2 F8 96 B1 DE 8B 7E
+                                    78 41 61 A1 38 A0 F2 16 9A D3 3E 14 6D 1B 16 AB
+                                    59 5F 9D 7D 98 BE 67 10 62 D2 17 F4 4E B6 8C 68
+                                    64 0C 7D 57 46 5A 06 3F 6B AC 77 6D 3E 2D AC 61 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> DC 79 D6 B5 FC 87 93 62 29 9B C5 A6 37 DA D2 E0 D9 96 56 B8 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C2 </node>
+            <node tag="0x9F918704"> B8 75 00 2F 38 BA 26 D6 11 67 C5 D4 40 36 76 04
+                                    AD 38 DF 2E 93 D8 EE 8D A0 E8 D9 C0 CF 4C C5 78
+                                    8D 11 DE A6 89 E5 F4 1D 23 A3 DA 3E 0B 1F A5 87
+                                    5A E2 56 20 F5 A6 BC CE E0 98 C1 B3 5C 69 18 89
+                                    D7 D0 EF 67 0E B8 31 2E 71 23 FC C5 DC 7D 2F 07
+                                    19 CC 80 E1 A9 30 17 F9 44 D0 97 33 0E DF 94 57
+                                    62 FE E6 2B 7B 0B A0 34 82 28 DB F3 8D 42 16 E5
+                                    A6 7A 7E F7 4F 5D 31 11 C4 4A A3 13 20 F6 23 CB
+                                    3C 53 E6 09 66 D6 92 00 67 C9 E0 82 B7 46 11 7E
+                                    48 E4 F0 0E 11 09 50 CA 54 DA 3E 38 E5 45 3B D5
+                                    54 4E 3A 67 60 E3 A6 A4 27 66 AD 22 84 E0 C9 AF </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 8E 74 82 96 35 9A 74 28 F5 36 AD DA 8E 2C 03 7E 2B 69 7E F6 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C3 </node>
+            <node tag="0x9F918704"> B9 31 82 AB E3 43 DF BF 38 8C 71 C4 D6 74 7D CD
+                                    EC 60 36 7F E6 3C FA A9 42 D7 D3 23 E6 88 D0 83
+                                    28 36 54 8B F0 ED FF 1E DE EB 88 2C 75 09 9F F8
+                                    1A 93 FA 52 5C 32 42 5B 36 02 3E A0 2A 88 99 B9
+                                    BF 7D 79 34 E8 6F 99 78 91 82 30 06 CE AA 93 09
+                                    1A 73 C1 FD E1 8A BD 4F 87 A2 23 08 64 0C 06 4C
+                                    8C 02 76 85 F1 B2 DB 7B 74 1B 67 AB 0D E0 5E 87
+                                    04 81 C5 F9 72 50 8C 17 F5 7E 4F 83 3D 63 22 0F
+                                    6E A2 CF BB 87 87 28 AA 58 87 DE 40 7D 10 C6 B8
+                                    F5 8D 46 77 9E CE C1 E2 15 54 87 D5 2C 78 A5 C0
+                                    38 97 F2 BB 58 0E 0A 2B BD E8 EA 2E 1C 18 F6 AA
+                                    F3 EB 3D 04 C3 47 7D EA B8 8F 15 0C 88 10 FD 1E
+                                    F8 EB 05 96 86 63 36 FE 2C 1F BC 6B EC 22 B4 FE
+                                    5D 88 56 47 72 6D B5 97 09 A5 05 F7 5C 49 E0 D8
+                                    D7 1B F5 1E 41 81 21 2B E2 14 2A B2 A1 E8 C0 D3
+                                    B7 13 6C D7 B7 70 8E 4D </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 12 F1 79 0C B0 27 3D C7 3C 6E 70 78 4B C2 4C 12 E8 DB 71 F6 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C7 </node>
+            <node tag="0x9F918704"> CD 23 7E 34 E0 29 9D E4 8F 1A 2C 94 F4 78 FE 97 
+                                    28 96 01 1E 1C A6 AB 46 2B 68 FE 0F 61 09 C9 A9 
+                                    7C 2D BE EA 65 93 2C DE 06 25 13 8B 9F 16 2B 92 
+                                    97 9D AA B0 19 D3 B5 56 1D 31 EB 2D 4F 09 F1 2F 
+                                    92 7E A8 F7 40 CE 0E 87 15 49 65 50 5E 22 72 F6 
+                                    90 42 B1 5D 57 CC C7 F7 71 91 91 23 97 82 83 B3 
+                                    CC E5 24 D9 71 52 07 BF 5F 5A D3 69 10 21 76 F0 
+                                    F7 A7 8A 6D EB 2B FF 0E DC E1 65 F3 B1 4F 14 D0 
+                                    03 5B 27 56 86 1F E0 3C 43 39 6E D0 02 C8 94 A3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 62 21 E0 C7 26 BA C8 F8 AC 25 F8 F9 3B 81 1D 1F FD 4C 13 1C </node>
+        </node>		
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C8 </node>
+            <node tag="0x9F918704"> BF 0C FC ED 70 8F B6 B0 48 E3 01 43 36 EA 24 AA
+                                    00 7D 79 67 B8 AA 4E 61 3D 26 D0 15 C4 FE 78 05
+                                    D9 DB 13 1C ED 0D 2A 8E D5 04 C3 B5 CC D4 8C 33
+                                    19 9E 5A 5B F6 44 DA 04 3B 54 DB F6 02 76 F0 5B
+                                    17 50 FA B3 90 98 C7 51 1D 04 BA BC 64 94 82 DD
+                                    CF 7C C4 2C 8C 43 5B AB 8D D0 EB 1A 62 0C 31 11
+                                    1D 1A AA F9 AF 65 71 EE BD 4C F5 A0 84 96 D5 7E
+                                    7A BD BB 51 80 E0 A4 2D A8 69 AB 95 FB 62 0E FF
+                                    26 41 C3 70 2A F3 BE 0B 0C 13 8E AE F2 02 E2 1D </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 33 BD 7A 05 9F AB 09 49 39 B9 0A 8F 35 84 5C 9D C7 79 BD 50 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> C9 </node>
+            <node tag="0x9F918704"> B3 62 DB 57 33 C1 5B 87 97 B8 EC EE 55 CB 1A 37
+                                    1F 76 0E 0B ED D3 71 5B B2 70 42 4F D4 EA 26 06
+                                    2C 38 C3 F4 AA A3 73 2A 83 D3 6E A8 E9 60 2F 66
+                                    83 EE CC 6B AF F6 3D D2 D4 90 14 BD E4 D6 D6 03
+                                    CD 74 42 06 B0 5B 4B AD 0C 64 C6 3A B3 97 6B 5C
+                                    8C AA F8 53 95 49 F5 92 1C 0B 70 0D 5B 0F 83 C4
+                                    E7 E9 46 06 8B AA AB 54 63 54 4D B1 8C 63 80 11
+                                    18 F2 18 2E FC C8 A1 E8 5E 53 C2 A7 AE 83 9A 5C
+                                    6A 3C AB E7 37 62 B7 0D 17 0A B6 4A FC 6C A4 82
+                                    94 49 02 61 1F B0 06 1E 09 A6 7A CB 77 E4 93 D9
+                                    98 A0 CC F9 3D 81 A4 F6 C0 DC 6B 7D F2 2E 62 DB </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 8E 8D FF 44 3D 78 CD 91 DE 88 82 1D 70 C9 8F 06 38 E5 1E 49 </node>
+        </node>
+
+        <node tag="0x1000">
+            <node tag="0x9F06"> A0 00 00 00 25 </node>
+            <node tag="0x9F22"> CA </node>
+            <node tag="0x9F918704"> C2 3E CB D7 11 9F 47 9C 2E E5 46 C1 23 A5 85 D6
+                                    97 A7 D1 0B 55 C2 D2 8B EF 0D 29 9C 01 DC 65 42
+                                    0A 03 FE 52 27 EC DE CB 80 25 FB C8 6E EB C1 93
+                                    52 98 C1 75 3A B8 49 93 67 49 71 95 91 75 8C 31
+                                    5F A1 50 40 07 89 BB 14 FA DD 6E AE 2A D6 17 DA
+                                    38 16 31 99 D1 BA D5 D3 F8 F6 A7 A2 0A EF 42 0A
+                                    DF E2 40 4D 30 B2 19 35 9C 6A 49 52 56 5C CC A6
+                                    F1 1E C5 BE 56 4B 49 B0 EA 5B F5 B3 DC 8C 5C 64
+                                    01 20 8D 00 29 C3 95 7A 8C 59 22 CB DE 39 D3 A5
+                                    64 C6 DE BB 6B D2 AE F9 1F C2 7B B3 D3 89 2B EB
+                                    96 46 DC E2 E1 EF 85 81 EF FA 71 21 58 AA EC 54
+                                    1C 0B BB 4B 3E 27 9D 7D A5 4E 45 A0 AC C3 57 0E
+                                    71 2C 9F 7C DF 98 5C FA FD 38 2A E1 3A 3B 21 4A
+                                    9E 8E 1E 71 AB 1E A7 07 89 51 12 AB C3 A9 7D 0F
+                                    CB 0A E2 EE 5C 85 49 2B 6C FD 54 88 5C DD 63 37
+                                    E8 95 CC 70 FB 32 55 E3 </node>
+            <node tag="0x9F918703"> 03 </node>
+            <node tag="0x9F918702"> 6B DA 32 B1 AA 17 14 44 C7 E8 F8 80 75 A7 4F BF E8 45 76 5F </node>
+        </node>
+
+	<node tag="0x1000">
+	    <node tag="0x9F06"> A0 00 00 01 52 </node>
+	    <node tag="0x9F22"> 5C </node>
+	    <node tag="0x9F918704"> 83 3F 27 5F CF 5C A4 CB 6F 1B F8 80 E5 4D CF EB
+	                            72 1A 31 66 92 CA FE B2 8B 69 8C AE CA FA 2B 2D
+				    2A D8 51 7B 1E FB 59 DD EF C3 9F 9C 3B 33 DD EE
+				    40 E7 A6 3C 03 E9 0A 4D D2 61 BC 0F 28 B4 2E A6
+				    E7 A1 F3 07 17 8E 2D 63 FA 16 49 15 5C 3A 5F 92
+				    6B 4C 7D 7C 25 8B CA 98 EF 90 C7 F4 11 7C 20 5E
+				    8E 32 C4 5D 10 E3 D4 94 05 9D 2F 29 33 89 1B 97
+				    9C E4 A8 31 B3 01 B0 55 0C DA E9 B6 70 64 B3 1D
+				    8B 48 1B 85 A5 B0 46 BE 8F FA 7B DB 58 DC 0D 70
+				    32 52 52 97 F2 6F F6 19 AF 7F 15 BC EC 0C 92 BC
+				    DC BC 4F B2 07 D1 15 AA 65 CD 04 C1 CF 98 21 91 </node>
+	    <node tag="0x9F918703"> 03 </node>
+	    <node tag="0x9F918702"> 60 15 40 98 CB BA 35 0F 5F 48 6C A3 10 83 D1 FC 47 4E 31 F8 </node>
+	</node>
+    </node> <!-- End node 0xBF918801 : TAG_SAMPLE_CAKEYS_PARAMETERS-->
+
+    <node tag="0xBF918802"> <!-- TAG_SAMPLE_CAREVOK_PARAMETERS -->
+    </node> <!-- End node 0xBF918802 : TAG_SAMPLE_CAREVOK_PARAMETERS -->
+
+
+    <node tag="0xBF918803"> <!-- TAG_SAMPLE_ICS_PARAMETERS -->
+
+        <node tag="0x1000">
+            <!-- ICS0 values -->
+            <node tag="0x9F928210"> 03 00 00 00 </node>                     <!-- TAG_GENERIC_DETECTION_TYPE -->
+            <node tag="0x9F928212"> 00 00 17 70 </node>                     <!-- TAG_GENERIC_DETECTION_GLOBAL_TIMEOUT : 6000 -->
+            <node tag="0x9F928214"> 01 </node>                              <!-- TAG_GENERIC_DETECTION_NB_CARDS_TO_DETECT -->
+            <node tag="0x9F918804"> 03 A9 80 </node>                        <!-- TAG_SAMPLE_NO_CARD_TIMEOUT : 4 minutes (240000ms = 3A980) (Interac GUI mode) -->
+
+            <!-- Application Independent Data -->
+            <node tag="0x9F1A"> 08 40 </node>                               <!-- TAG_EMV_TERMINAL_COUNTRY_CODE - 0124 for Canada, 0840 for US -->
+            <node tag="0x5F2A"> 08 40 </node>                               <!-- TAG_EMV_TRANSACTION_CURRENCY_CODE - 0124 for Canada, 0840 for US -->
+            <node tag="0x5F36"> 02 </node>                                  <!-- TAG_EMV_TRANSACTION_CURRENCY_EXPONENT -->
+            <node tag="0x9F40"> 60 00 F0 B0 01 </node>                      <!-- TAG_EMV_ADD_TERMINAL_CAPABILITIES -->
+            <node tag="0x9F35"> 22 </node>                                  <!-- TAG_EMV_TERMINAL_TYPE -->
+            <!-- Application Dependent Data -->
+            <node tag="0x9F01"> 01 23 45 67 89 01 </node>                   <!-- TAG_EMV_ACQUIRER_IDENTIFIER -->
+            <node tag="0x9F15"> 00 00 </node>                               <!-- TAG_EMV_MERCHANT_CATEGORY_CODE -->
+            <node tag="0x9F16"> 31 31 32 32 33 33 34 34 35 35 36 36 37 37 38 </node>    <!-- TAG_EMV_MERCHANT_IDENTIFIER -->
+            <node tag="0x9F1C"> 31 32 33 34 35 36 37 38 </node>             <!-- TAG_EMV_TERMINAL_IDENTIFICATION -->
+
+        </node> <!-- End node 1000 -->
+    </node> <!-- End node 0xBF918803 : TAG_SAMPLE_ICS_PARAMETERS-->
+
+
+    <node tag="0xBF918804"> <!-- TAG_SAMPLE_SPECIFIC_PARAMETERS -->
+
+        <!-- JCB Specific parameters -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 00 01 </node>                           <!-- TAG_EP_KERNEL_TO_USE : JCB -->
+        </node> <!-- End node 1000 -->
+
+        <!-- PAYPASS Specific parameters -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 00 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : PAYPASS -->
+        </node> <!-- End node 1000 -->
+
+        <!-- VISA Specific parameters -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 00 03 </node>                           <!-- TAG_EP_KERNEL_TO_USE : VISA -->
+
+            <!-- Supported fDDA versions = 00 01 -->
+            <node tag="0x9f918307"> 00 01 </node>                           <!-- TAG_PAYWAVE_TERM_SUPPORTED_FDDA_VERSIONS -->
+            <node tag="0x9F33"> E0 F8 C8 </node>                            <!-- TAG_EMV_TERMINAL_CAPABILITIES -->
+        </node> <!-- End node 1000 -->
+
+        <!-- American Express ExpressPay -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 00 04 </node>                           <!-- TAG_EP_KERNEL_TO_USE : American Express ExpressPay -->
+        </node> <!-- End node 1000 -->
+
+        <!-- EMVCO Specific parameters -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 01 01 </node>                           <!-- TAG_EP_KERNEL_TO_USE : EMVCO -->
+        </node> <!-- End node 1000 -->
+
+        <!-- Discover Specific parameters -->
+        <node tag="0x1000">
+            <node tag="0x9F928101"> 01 02 </node>                           <!-- TAG_EP_KERNEL_TO_USE : DISCOVER -->
+        </node> <!-- End node 1000 -->
+
+        <node tag="0x9F918802" format="ascii"> "EUR9782,.1" </node>         <!-- TAG_SAMPLE_GENERIC_MONEY_EXTENDED EUR9782,.1 -->
+        <node tag="0x9F918802" format="ascii"> "MYR4582,.1" </node>         <!-- TAG_SAMPLE_GENERIC_MONEY_EXTENDED MYR4582,.1 -->
+        <node tag="0x9F918802" format="ascii"> "CAD1242,.1" </node>         <!-- TAG_SAMPLE_GENERIC_MONEY_EXTENDED CAD1242,.1 -->
+        <node tag="0x9F918802" format="ascii"> "USD8402,.1" </node>         <!-- TAG_SAMPLE_GENERIC_MONEY_EXTENDED USD8402,.1 -->
+    </node> <!-- End node 0xBF918804 : TAG_SAMPLE_SPECIFIC_PARAMETERS-->
+
+</node>  <!-- End node 0 -->
+</tlvtree>

@@ -1,0 +1,60 @@
+triPOS Mobile SDK Change Log
+Worldpay Integrated Payments
+
+v1.4.0, Release date August 2018
+    - Added EMV certification for RBA 21 with L2 kernal 5.26.
+    - Added support for setting the reboot time for PCI v4 requirements. The default reboot time is set to 3:00am local time based on the iOS device clock.
+    - Rebranding for Worldpay Integrated Payments.
+
+v1.3.1, Release date February 2018
+    - 112689: Fixed an issue with enabling aimer and scan lights on the iSMP4.
+    - 126366: Fixed bug where triPOS Mobile was unable to automatically recover from a TCP/IP device connection failure.
+    - 126434: Fixed bug where stored contactless MSD transactions could not be processed when forwarded.
+    - 128401: Fixed an issue with the calculation of store and forward unprocessed total amount.
+
+v1.3.0, Release date November 2017
+    - Added support for the Ingenico iSMP4 with bluetooth and Wi-Fi connectivity
+    - Added barcode support for the iSMP4
+    - 118692: Fixed bug where the version number was not updated inside the Index.html.
+    - 116121: Fixed bug where gift card flows prompted for amount confirmation.
+
+v1.2.0, Release date October 2017
+    - Added support for creating an OmniToken using a transaction ID.
+    - Added support for creating an OmniToken from card data.
+    - Added support for processing a Sale, Auth, and Refund transaction using an OmniToken.
+    - Added gift card Activate, Balance Inquiry, Credit, Reversal, Reload, Return and Sale transactions.
+    - Added Vantiv StoreCard support for all gift card transactions.
+    - 106784: Fixed bug where billing postal code would not allow leading zeros.
+    - 109213: Fixed typo in terms of service document.
+
+v1.1.13, Release date July 2017
+    - Changed the Express ApplicationVersion to include the SDK version.
+    - Added ability to create OmniToken via card input or transaction ID.
+    - Added sample code to demonstrate OmniToken transactions for Express transaction types: CreditCardSale, CreditCardAuthorization, CreditCardCredit.
+    - Added sample code to demonstrate a CreditCardReturn using a transaction ID from a prior OmniToken transaction.
+    - 104247: Fixed bug where PIN data was being sent during no-PIN credit transactions.
+    - 104249: Fixed bug where an Ingenico RBA device configured to use a static IP would revert to DHCP after a firmware update.
+    - 99639: Fixed bug where the manual card entry mode button is inconsistently displayed.
+    - 102081: Fixed bug where valid Visa Apple Pay transactions are declined.
+    - 104904: Fixed bug where manual entry refund transactions would cause the PIN pad to disconnect.
+
+v1.1.11, Release date March 2017
+    - 92170: Fixed bug where card holder name was not being returned for chip read cards.
+    - 92171: Fixed bug where deleting a stored transaction would cause unexpected errors until the SDK is reinitialized.
+
+v1.1.10, Release date February 2017
+    - 88525: Fixed bug where payment account information was not being returned for payment account create Express methods.
+    - 89750: Fixed bug where some EMV refunds prompted for cashback amount.
+    - 89751: Fixed bug where there were some method names that conflicted with method names in libXml.
+
+v1.1.9, Release date February 2017
+    - Sale, Auth, and Refund transaction responses now return the raw Express XML.
+    - 87218: Fixed bug where performing a contactless card input would display as swiped.
+    - 87210: Fixed bug where the host properties were missing from the query stored transactions response.
+    - 86482: Fixed bug where the transaction ID was missing from the manually forward response.
+    - 87639: Fixed bug where the convenience fee amount was not added to the total amount when manually forwarding a stored transaction.
+
+v1.1.8, Release date December 2016
+    - Added store and forward.
+
+
