@@ -1,5 +1,5 @@
 
-framework module Tripos {
+framework module triPOSMobileSDK {
     umbrella header "triPOSMobileSDK.h"
     export *
     module * {export *}
