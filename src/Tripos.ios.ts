@@ -1,5 +1,8 @@
 import { Common } from './Tripos.common';
 
-export class Tripos extends Common {
+ let sharedVtp:any;
 
-}
+ export function initializeSDK(){
+    sharedVtp =triPOSMobileSDK.sharedVtp;
+    
+ }
